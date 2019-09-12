@@ -24,7 +24,7 @@ public class HashtableConcept {
 		ht.put("Skills6", "Sql");
 		ht.put("Skills7", "RestAssured");
 		ht.put("Skills8", "TestNG");
-		ht.put("Skills9", "Postman");
+		ht.put("Skills9", "Automation");
 		
 		System.out.println(ht);
 		
