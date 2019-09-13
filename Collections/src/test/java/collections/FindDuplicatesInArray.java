@@ -1,6 +1,8 @@
 package collections;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 import org.testng.annotations.Test;
@@ -30,6 +32,14 @@ public class FindDuplicatesInArray {
 			System.out.println("Duplicate element found  ::-> "+name);
 		}
 	}
+	
+	//using HashMap
+	/*Map<String,Integer> hm=new HashMap<String,Integer>();
+	for(String name:sArray) {
+		if(hm.get(name)==null) {
+			hm.put(name, value)
+		}
+	}*/
 
 }
 }
