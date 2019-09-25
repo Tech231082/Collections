@@ -31,5 +31,6 @@
 	<classpathentry kind="lib" path="C:/mytools/selenium-java-3.141.59/libs/okio-1.14.0.jar"/>
 	<classpathentry kind="lib" path="C:/mytools/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
 	<classpathentry kind="lib" path="C:/mytools/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
+	<classpathentry kind="lib" path="C:/mytools/htmlunit-driver-2.35.1-jar-with-dependencies (1).jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
