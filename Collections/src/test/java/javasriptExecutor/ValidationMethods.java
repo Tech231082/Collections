@@ -16,7 +16,7 @@ public class ValidationMethods {
 	}
 	
 	public boolean isEnabledMethod() {
-		boolean b=driver.findElement(By.xpath("//div//label//span[@class='private-checkbox__icon private-checkbox__dash']//svg[@role='presentation']")).isEnabled();
+		boolean b=driver.findElement(By.xpath("//a[@class='m-left-1']")).isEnabled();
 		return b;
 	}
 	
@@ -33,8 +33,9 @@ public class ValidationMethods {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get("https://app.hubspot.com/login/?_ga=2.266506507.401545528.1569505508-1624782347.1568217989");
 		System.out.println(isDisplayedMethod());
+		System.out.println(driver.getWindowHandle());
 		System.out.println(isEnabledMethod());
-		System.out.println(isSelectedMethod());
+		//System.out.println(isSelectedMethod());
 	}
 
 }
