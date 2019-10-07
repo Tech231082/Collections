@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46" started-at="2019-09-27T00:11:43Z" finished-at="2019-09-27T00:11:44Z">
+  <suite name="Default suite" duration-ms="9210" started-at="2019-10-01T01:06:29Z" finished-at="2019-10-01T01:06:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46" started-at="2019-09-27T00:11:43Z" finished-at="2019-09-27T00:11:44Z">
-      <class name="collections.TwoDimensArray">
-        <test-method status="PASS" signature="test()[pri:0, instance:collections.TwoDimensArray@cb51256]" name="test" duration-ms="15" started-at="2019-09-27T00:11:44Z" finished-at="2019-09-27T00:11:44Z">
+    <test name="Default test" duration-ms="9210" started-at="2019-10-01T01:06:29Z" finished-at="2019-10-01T01:06:38Z">
+      <class name="singletonInSelenium.SingletonTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:singletonInSelenium.SingletonTest@13c27452]" name="setUp" is-config="true" duration-ms="6958" started-at="2019-10-01T01:06:29Z" finished-at="2019-10-01T01:06:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test()[pri:0, instance:singletonInSelenium.SingletonTest@13c27452]" name="test" duration-ms="1484" started-at="2019-10-01T01:06:36Z" finished-at="2019-10-01T01:06:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-      </class> <!-- collections.TwoDimensArray -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:singletonInSelenium.SingletonTest@13c27452]" name="tearDown" is-config="true" duration-ms="738" started-at="2019-10-01T01:06:38Z" finished-at="2019-10-01T01:06:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- singletonInSelenium.SingletonTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

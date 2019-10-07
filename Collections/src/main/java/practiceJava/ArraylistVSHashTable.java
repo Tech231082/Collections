@@ -6,10 +6,12 @@ import java.util.Iterator;
 
 public class ArraylistVSHashTable {
 
-	public static void main(String[] args) {
+	public static <E> void main(String[] args) {
 		//stores the values on the basis of indexes
 		//any type of values can be added to arraylist
 		//it is dynamic array
+		//arraylist is not synchronized
+		//can store duplicate values
 		//if we want to add a particular data type/object type values into arraylist we can use generics
 		
 		 ArrayList ar=new ArrayList();
@@ -21,6 +23,11 @@ public class ArraylistVSHashTable {
 		 System.out.println(ar.size());
 		 System.out.println(ar.get(3));
 		 System.out.println(ar.get(4));
+		 
+		 System.out.println("printing using forEach");
+		 ar.forEach(list->{
+			 System.out.print(ar);
+		 });
 		 
 		 System.out.println("printing using for loop");
 		 for(int i=0;i<ar.size();i++) {
@@ -49,6 +56,27 @@ public class ArraylistVSHashTable {
 		 //System.out.println("printing using for loop");
 		 System.out.println(ht.get("j"));
 		 
+		 //when we dont know what type of data we will use at runtime
+		 ArrayList<E> arr=new ArrayList<E>();
+		 
+		 ArrayList<Student> array=new ArrayList<Student>();
+		 
+		 
+		 Student s1=new Student("Rahini",8);
+		 Student s2=new Student("Jivin",3);
+		 Student s3=new Student("Shalan",5);
+		 Student s4=new Student("Shalan",5);
+		 
+		 array.add(s1);
+		 array.add(s2);
+		 array.add(s3);
+		 array.add(s4);
+		 
+		Iterator its= array.iterator();
+		while(its.hasNext()) {
+			Student s=(Student) its.next();
+			System.out.println("Age:"+s.age+"  "+"Name:"+s.name);
+		}
 		 
 		 
 	}
